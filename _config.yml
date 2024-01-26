@@ -1,0 +1,24 @@
+markdown:       kramdown
+kramdown:
+  auto_ids:     true
+encoding:       UTF-8
+exclude:
+  - .git/
+  - package.json
+  - package-lock.json
+  - node_modules
+sass:
+  sass_dir: ./
+  style: compressed
+
+theme: jekyll-theme-primer
+
+plugins:
+  - jekyll-seo-tag
+
+title: "my site"
+
+twitter:
+  username: arpitingle
+
+
