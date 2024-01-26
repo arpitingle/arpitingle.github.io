@@ -1,4 +1,5 @@
 markdown:       kramdown
+repository: arpitingle/arpitingle
 kramdown:
   auto_ids:     true
 encoding:       UTF-8
