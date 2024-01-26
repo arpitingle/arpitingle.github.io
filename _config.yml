@@ -3,10 +3,13 @@ kramdown:
   auto_ids:     true
 encoding:       UTF-8
 exclude:
-  - .git/
-  - package.json
-  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
   - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 sass:
   sass_dir: ./
   style: compressed
