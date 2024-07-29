@@ -44,8 +44,9 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: cd blog
-             bundle exec jekyll build 
+        run: |
+             cd blog
+             bundle exec jekyll build
              ls -la _site
         env:
           JEKYLL_ENV: production
