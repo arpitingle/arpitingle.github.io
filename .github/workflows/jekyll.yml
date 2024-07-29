@@ -45,7 +45,7 @@ jobs:
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: cd blog
-             bundle exec jekyll build --baseurl "/blog"
+             bundle exec jekyll build 
              ls -la _site
         env:
           JEKYLL_ENV: production
