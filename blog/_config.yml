@@ -20,7 +20,7 @@
 
 title: arpit's blog
 description: >- # this means to ignore newlines until "baseurl:"
-  musings on tech,, startups and philosophy 
+  musings on tech, startups, art and philosophy 
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 email: arpitingle1@gmail.com
 url: "https://arpitingle.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
