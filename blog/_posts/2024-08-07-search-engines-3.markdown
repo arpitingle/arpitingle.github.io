@@ -2,7 +2,7 @@
 layout: post
 title:  "Search Engines 3.0"
 date:   2024-08-07 23:25:41 +0530
-categories: search engines ml 
+categories: search-engines 
 ---
 
 ### Gen 1 (e.g., google): 
