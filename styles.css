@@ -1,0 +1,140 @@
+/* Shared styles for arpitingle.github.io */
+
+body {
+    font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 1.5em;
+}
+
+nav a {
+    color: #3578a5;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Typography */
+h1 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: #34495e;
+}
+
+h3 {
+    font-size: 1.1em;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+    color: #34495e;
+}
+
+/* Links */
+a {
+    color: #3578a5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.dark-blue-link {
+    color: #003366;
+}
+
+.dark-blue-link:hover {
+    text-decoration: underline;
+}
+
+/* Content */
+p {
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 0.3em;
+}
+
+/* Blog posts */
+.post-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.post-list li {
+    margin-bottom: 0.8em;
+}
+
+.post-date {
+    color: #888;
+    font-size: 0.85em;
+    margin-left: 0.5em;
+}
+
+/* Code */
+code, pre {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+pre {
+    padding: 1em;
+    overflow-x: auto;
+}
+
+pre code {
+    padding: 0;
+    background: none;
+}
+
+/* Books page */
+.book-list {
+    font-size: 0.91em;
+    line-height: 1.6;
+}
+
+.book-category {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: #34495e;
+    font-weight: bold;
+}

@@ -3,84 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arpit's Site</title>
-    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-    <style>
-        body {
-            font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-            font-size: 18px;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0;
-        }
-        h1 {
-            font-size: 1.6em;
-            margin-bottom: 0.5em;
-            color: #2c3e50;
-        }
-        h2 {
-            font-size: 1.3em;
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
-            color: #34495e;
-        }
-        a {
-            color: #3578a5;
-            text-decoration: none;
-            margin-right: 10px;
-            font-weight: normal;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .dark-blue-link {
-            color: #003366; /* Dark blue color */
-        }
-        .dark-blue-link:hover {
-            text-decoration: underline;
-        }
-        p {
-            font-size: 1em;
-            margin-top: 0.5em;
-            margin-bottom: 0.5em;
-            line-height: 1.4; 
-            padding: 1;
-        }
-        ul {
-            padding-left: 20px;
-        }
-    </style>
+    <meta name="description" content="Arpit Ingle - CS undergrad interested in tech, design, philosophy and literature. Writing about ideas and building cool projects.">
+    <meta property="og:title" content="Arpit Ingle">
+    <meta property="og:description" content="CS undergrad interested in tech, design, philosophy and literature.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arpitingle.github.io/">
+    <title>Arpit Ingle</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h2>Arpit's Site</h2>
+        <nav>
+            <a href="index.html" class="active">home</a>
+            <a href="blog.html">blog</a>
+            <a href="books.html">bookshelf</a>
+            <a href="links.html">links</a>
+        </nav>
+
+        <h1>Arpit Ingle</h1>
         <p>
             <a href="https://github.com/arpitingle">github</a>
-            <a href="https://twitter.com/arpitingle">twitter</a> 
-            <a href="https://arpitingle.github.io/books.html">bookshelf</a>
+            <a href="https://twitter.com/arpitingle">twitter</a>
         </p>
-        <h3>About</h3>
-            <p>
-            Hey! I'm Arpit <br> I am an undergrad, majoring in cs along with math and design research. 
-            I love working on cool projects. I frequently tweet about what I read and find interesting. 
-            I have a <a href="https://arpitingle.substack.com/">substack</a>where I write notes and essays and <a href="https://lapis.nahr.us/arpit">lapis</a>where i document my readings and stuff.  
-            <br></br>
-My interests other than tech include design, philosophy and literature.  
-</p>
-<h2>Posts</h2>
-        <p>
-            
-           <li> <a href="https://arpitingle.github.io/search.html" class="dark-blue-link">Search Engines 3.0</a><br> </li>
-           <li> <a href="https://arpitingle.github.io/technepunk.html" class="dark-blue-link">Technepunk Manifesto</a><br></li>
-           <li> <a href="https://arpitingle.github.io/20.html" class="dark-blue-link">On 20</a><br></li>
 
+        <h2>About</h2>
+        <p>
+            Hey! I'm Arpit. I am an undergrad, majoring in CS along with math and design research.
+            I love working on cool projects. I frequently tweet about what I read and find interesting.
         </p>
+        <p>
+            I have a <a href="https://arpitingle.substack.com/">substack</a> where I write notes and essays
+            and <a href="https://lapis.nahr.us">lapis</a> where I document my readings and stuff.
+        </p>
+        <p>
+            My interests other than tech include design, philosophy and literature.
+        </p>
+
+        <h2>Posts</h2>
+        <ul class="post-list">
+            <li><a href="search.html" class="dark-blue-link">Search Engines 3.0</a> <span class="post-date">2024</span></li>
+            <li><a href="technepunk.html" class="dark-blue-link">Technepunk Manifesto</a> <span class="post-date">2024</span></li>
+            <li><a href="20.html" class="dark-blue-link">On 20</a> <span class="post-date">2024</span></li>
+        </ul>
     </div>
 </body>
 </html>

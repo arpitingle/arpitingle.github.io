@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Torusaynim">
-    <title>The End of the Internet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found">
+    <title>404 - Arpit Ingle</title>
     <style>
         * {
             box-sizing: border-box;
@@ -16,58 +17,59 @@
             margin: 0;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
         }
         a {
             color: inherit;
             text-decoration: none;
         }
+        a:hover {
+            text-decoration: underline;
+        }
         .page {
             color: #fff;
             text-transform: uppercase;
-            font-family: Times New Roman;
+            font-family: 'Times New Roman', serif;
             font-weight: 900;
-            padding: 3.3333333333333335vw;
-            padding-top: 5vw;
+            padding: 3.33vw;
+            text-align: center;
         }
         .small-line {
-            font-size: 5.833333333333333vw;
-            transform: scale(1,1.5);
+            font-size: 5.83vw;
+            transform: scaleY(1.5);
             line-height: 1.2;
         }
         .large-line {
-            font-size: 8.333333333333334vw;
-            transform: scale(1,1.5);
+            font-size: 8.33vw;
+            transform: scaleY(1.5);
             line-height: 1.2;
         }
         .error {
-            margin-top: 3.3333333333333335vw;
-            margin-bottom: 0.5833333333333334vw;
+            margin-top: 3.33vw;
+            margin-bottom: 0.58vw;
             font-size: 3vw;
-            font-family: Helvetica;
-            transform: scale(1,1.5);
+            font-family: Helvetica, Arial, sans-serif;
+            transform: scaleY(1.5);
             font-weight: 600;
         }
-        .title {
-            margin-top: 1.6666666666666667vw;
+        .back-link {
+            margin-top: 1.67vw;
             font-size: 5vw;
-            font-family: Helvetica;
-            transform: scale(1,1.5);
+            font-family: Helvetica, Arial, sans-serif;
+            transform: scaleY(1.5);
             font-weight: 600;
-            line-height: .9;
-            float: right;
+            line-height: 0.9;
         }
     </style>
 </head>
 <body>
     <div class="page">
-    <div class="small-line">oops</div>
-    <div class="small-line">something</div>
-    <div class="large-line">went wrong</div>
-    <div class="error">error:404</div>
-    <!-- don't forget to put your home page link instead of # -->
-    <div class="title"><a href="index.html">take me back</a></div>
+        <div class="small-line">oops</div>
+        <div class="small-line">something</div>
+        <div class="large-line">went wrong</div>
+        <div class="error">error: 404</div>
+        <div class="back-link"><a href="index.html">take me back</a></div>
     </div>
 </body>
 </html>
