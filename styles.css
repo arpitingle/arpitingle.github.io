@@ -73,13 +73,13 @@ h1 {
 }
 
 .lead-in {
-    margin: 0 0 0.6rem;
+    margin: 0 0 0.5rem;
     color: #1e303b;
     font-family: var(--sans);
-    font-size: clamp(1.6rem, 5vw, 2.1rem);
+    font-size: clamp(2.1rem, 7vw, 2.75rem);
     font-weight: 700;
     letter-spacing: -0.03em;
-    line-height: 1.2;
+    line-height: 1.15;
 }
 
 h2 {
@@ -123,8 +123,13 @@ ul li {
 }
 
 .intro {
-    max-width: 38rem;
-    font-size: 1.08em;
+    max-width: 36rem;
+    margin-bottom: 1.8rem;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 .post-list {
