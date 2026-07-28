@@ -72,6 +72,16 @@ h1 {
     letter-spacing: -0.04em;
 }
 
+.lead-in {
+    margin: 0 0 0.6rem;
+    color: #1e303b;
+    font-family: var(--sans);
+    font-size: clamp(1.6rem, 5vw, 2.1rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+}
+
 h2 {
     margin: 2.2rem 0 0.65rem;
     font-size: 1.15rem;
@@ -227,6 +237,52 @@ ul li {
     font-size: 0.9em;
 }
 
+.note {
+    margin-bottom: 2.4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.note:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.note-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.note-title {
+    margin: 0;
+    color: #1e303b;
+    font-family: var(--sans);
+    font-size: 1.02rem;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.note-date {
+    flex: 0 0 auto;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.76rem;
+    white-space: nowrap;
+}
+
+.note p {
+    margin: 0 0 0.85rem;
+}
+
+.note p:last-child {
+    margin-bottom: 0;
+}
+
 code,
 pre {
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
@@ -249,14 +305,7 @@ pre code {
     background: none;
 }
 
-footer {
-    margin-top: 4rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--line);
-    color: var(--muted);
-    font-family: var(--sans);
-    font-size: 0.72rem;
-}
+
 
 @media (max-width: 520px) {
     body {
