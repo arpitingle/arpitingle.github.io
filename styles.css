@@ -1,119 +1,242 @@
-/* Shared styles for arpitingle.github.io */
+:root {
+    --paper: #fcfbf8;
+    --ink: #25272a;
+    --muted: #70767d;
+    --line: #dedbd3;
+    --accent: #285b7d;
+    --accent-dark: #173f5a;
+    --sans: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
+    --serif: Georgia, 'Times New Roman', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
     margin: 0;
-    padding: 20px;
-    line-height: 1.6;
+    min-height: 100vh;
+    padding: clamp(1.25rem, 4vw, 3.5rem) 1.25rem;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
     font-size: 18px;
+    line-height: 1.7;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0;
+    width: min(100%, 680px);
+    margin: 0 auto;
 }
 
-/* Navigation */
 nav {
-    margin-bottom: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    margin-bottom: 2.4rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--line);
+    font-family: var(--sans);
+    font-size: 0.88rem;
 }
 
 nav a {
-    color: #3578a5;
+    padding: 0.15rem 0 0.3rem;
+    border-bottom: 2px solid transparent;
+    color: var(--accent);
     text-decoration: none;
-    margin-right: 15px;
-    font-weight: normal;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav a:hover,
+nav a.active {
+    color: var(--accent-dark);
 }
 
 nav a.active {
-    font-weight: bold;
-    color: #2c3e50;
+    border-bottom-color: currentColor;
+    font-weight: 700;
 }
 
-/* Typography */
+h1,
+h2,
+h3 {
+    color: #1e303b;
+    font-family: var(--sans);
+    line-height: 1.25;
+}
+
 h1 {
-    font-size: 1.6em;
-    margin-bottom: 0.5em;
-    color: #2c3e50;
+    margin: 0 0 1.1rem;
+    font-size: clamp(1.7rem, 5vw, 2.2rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
 }
 
 h2 {
-    font-size: 1.3em;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    color: #34495e;
+    margin: 2.2rem 0 0.65rem;
+    font-size: 1.15rem;
 }
 
 h3 {
-    font-size: 1.1em;
-    margin-top: 1.2em;
-    margin-bottom: 0.5em;
-    color: #34495e;
+    margin: 1.4rem 0 0.45rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
-/* Links */
+p {
+    margin: 0 0 1rem;
+}
+
 a {
-    color: #3578a5;
-    text-decoration: none;
+    color: var(--accent);
+    text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+    text-underline-offset: 0.15em;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: var(--accent-dark);
 }
 
-.dark-blue-link {
-    color: #003366;
-}
-
-.dark-blue-link:hover {
-    text-decoration: underline;
-}
-
-/* Content */
-p {
-    font-size: 1em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    line-height: 1.5;
+a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
 }
 
 ul {
-    padding-left: 20px;
+    padding-left: 1.2rem;
 }
 
 ul li {
-    margin-bottom: 0.3em;
+    margin-bottom: 0.35rem;
 }
 
-/* Blog posts */
+.intro {
+    max-width: 38rem;
+    font-size: 1.08em;
+}
+
 .post-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    padding-left: 0;
 }
 
 .post-list li {
-    margin-bottom: 0.8em;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.8rem;
+    margin: 0;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.post-list a {
+    color: var(--accent-dark);
+    font-size: 1.04em;
+}
+
+.post-meta {
+    flex: 0 0 auto;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+.post-source {
+    margin-right: 0.4rem;
+    text-transform: uppercase;
 }
 
 .post-date {
-    color: #888;
-    font-size: 0.85em;
-    margin-left: 0.5em;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.78rem;
 }
 
-/* Code */
-code, pre {
-    font-family: 'Courier New', monospace;
+.more-link {
+    margin-top: 1.35rem;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.85rem;
+}
+
+.current-reading {
+    margin-bottom: 2rem;
+    padding: 0.8rem 1rem;
+    border-left: 3px solid var(--accent);
+    background: #f4f1ea;
+}
+
+.section-title {
+    margin: 0 0 0.3rem;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.book-section {
+    margin-top: 2rem;
+}
+
+.book-list {
+    margin: 0;
+    padding-left: 1.15rem;
+    font-size: 0.94em;
+    line-height: 1.65;
+}
+
+.book-list li {
+    padding-left: 0.15rem;
+    margin-bottom: 0.38rem;
+}
+
+.find-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--line);
+}
+
+.find-list li {
+    margin: 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.find-list a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.85rem 0;
+    color: var(--accent-dark);
+    font-family: var(--sans);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.find-list a::after {
+    content: '↗';
+    color: var(--muted);
     font-size: 0.9em;
-    background-color: #f0f0f0;
-    padding: 2px 6px;
+}
+
+code,
+pre {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+    font-size: 0.88em;
+    background: #f1efe9;
     border-radius: 3px;
+}
+
+code {
+    padding: 0.12em 0.3em;
 }
 
 pre {
@@ -126,15 +249,32 @@ pre code {
     background: none;
 }
 
-/* Books page */
-.book-list {
-    font-size: 0.91em;
-    line-height: 1.6;
+footer {
+    margin-top: 4rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.72rem;
 }
 
-.book-category {
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    color: #34495e;
-    font-weight: bold;
+@media (max-width: 520px) {
+    body {
+        padding: 1.25rem;
+        font-size: 17px;
+    }
+
+    nav {
+        gap: 0.35rem 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .post-list li {
+        display: block;
+    }
+
+    .post-meta {
+        display: block;
+        margin-top: 0.2rem;
+    }
 }
