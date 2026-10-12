@@ -6,7 +6,6 @@
     --accent: #285b7d;
     --accent-dark: #173f5a;
     --sans: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
-    --serif: Georgia, 'Times New Roman', serif;
 }
 
 * {
@@ -19,7 +18,7 @@ body {
     padding: clamp(1.25rem, 4vw, 3.5rem) 1.25rem;
     background: var(--paper);
     color: var(--ink);
-    font-family: var(--serif);
+    font-family: var(--sans);
     font-size: 18px;
     line-height: 1.7;
 }
